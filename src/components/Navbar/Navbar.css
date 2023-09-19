@@ -1,0 +1,6 @@
+nav a.active{
+    background: red;
+    color: white;
+    padding: .6rem;
+    border-radius: 10px;
+}

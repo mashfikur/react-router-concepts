@@ -1,10 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData ,useParams } from "react-router-dom";
 import { Dna } from "react-loader-spinner";
-import { useEffect, useState } from "react";
+import { useEffect, useState  } from "react";
 
 const PostDetails = () => {
   const [loader, setLoader] = useState(true);
   const postDetails = useLoaderData();
+  const params=useParams()
+
+  console.log(params)
 
   useEffect(() => {
     if (postDetails) {
